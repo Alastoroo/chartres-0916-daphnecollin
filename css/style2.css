@@ -1,0 +1,267 @@
+/*CSS Carousel*/
+.vertical .carousel-inner {
+  height: 100%;
+}
+
+.carousel.vertical .item {
+  -webkit-transition: 0.6s ease-in-out top;
+     -moz-transition: 0.6s ease-in-out top;
+      -ms-transition: 0.6s ease-in-out top;
+       -o-transition: 0.6s ease-in-out top;
+          transition: 0.6s ease-in-out top;
+}
+
+.carousel.vertical .active {
+  top: 0;
+}
+
+.carousel.vertical .next {
+  top: 400px;
+}
+
+.carousel.vertical .prev {
+  top: -400px;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
+.carousel.vertical .active.left {
+  top: -400px;
+}
+
+.carousel.vertical .active.right {
+  top: 400px;
+}
+
+.carousel.vertical .item {
+    left: 0;
+}
+
+
+/*BOOTSTRAP modif CSS*/
+.container-fluid {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+[class*="col-"] {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/*CSS Général*/
+body {
+	background-color: rgba(17, 17, 17, 1);
+}
+h2 {
+	color: rgba(246, 139, 31, 1);
+	font-size: 70px;
+}
+h4 {
+	color: white;
+}
+
+@media screen and (max-width: 900px){
+	h2 {
+		font-size: 50px;
+	}
+	#date img {
+		width: 75px;
+	}
+}
+@media screen and (max-width: 550px){
+	h2 {
+		font-size: 25px;
+	}
+	#date img {
+		width: 69px;
+	}
+}
+
+/*Accueil*/
+#homepage {
+	width: 100%;
+}
+#homepage .container-fluid {
+    min-height: 220px;
+}
+#myCarousel{
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+#myCarousel img {
+	width: 100%;
+}
+
+#navbar {
+	background: rgba(0,0,0,0.8);
+	padding-top: 15px;
+	font-size: 20px;
+	min-height: 42px;
+	width: 100%;
+	/*position: relative;*/
+	z-index: 100;
+	color: white;
+	text-align: center;
+	margin-top:-1%;
+	border-bottom: 1px solid #333;
+}
+#navbar ul li a:hover {
+    color: rgba(246, 139, 31, 1);
+    transition: color 0.5s;
+}
+#navbar ul li a {
+	margin-top : 40px;
+}
+.navbar-fixe {
+	position: fixed;
+	top: 0;
+	background-color: #333;
+}
+
+.menu {
+	/*margin-top:-2.8%;*/
+}
+.menu li a {
+	text-decoration: none;
+	color: white;
+}
+.menu li {
+	list-style-type: none;
+	padding-bottom: 5px;
+}
+
+#paveAccueil {
+	position: absolute;
+	float:left;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.4);
+	margin-left: 5%;
+	margin-top: 5%;
+	color: white;
+	padding: 5px 5px 5px 5px;
+}
+
+/*CSS programmes*/
+#prog {
+	margin-top: 40px;
+}
+#programmes{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.imgBloc {
+	width: 300px;
+	margin: auto;
+}
+#contenu {
+	text-align: center;
+	margin-left: 0px;
+
+}
+
+
+/*Effets CSS programme*/
+figure.effect-zoe figcaption {
+	top:auto;bottom:0;
+	height:5.2em;
+	color:#3c4a50;
+	-webkit-transition:-webkit-transform .35s;
+	transition:transform .35s;
+	-webkit-transform:translate3d(0,100%,0);
+	transform:translate3d(0,100%,0)
+}
+ figure.effect-zoe h2 {
+ 	float:left;
+ }
+ figure.effect-zoe p.icon-links a {
+ 		float:right;
+ 		color:#3c4a50;
+ 		font-size:1.4em;
+ }
+ figure.effect-zoe:hover p.icon-links a:hover,figure.effect-zoe:hover p.icon-links a:focus {
+ 	color:#252d31;
+ }
+
+ figure.effect-zoe p.description {
+ 		position:absolute;
+ 		bottom:8em;
+ 		padding:2em;
+ 		color:#fff;
+ 		text-transform:none;
+ 		font-size:90%;
+ 		opacity:0;
+ 		-webkit-backface-visibility:hidden;
+ 		-webkit-transition:opacity .35s;
+ 		transition:opacity .35s;
+ 		-webkit-backface-visibility:hidden;
+ }
+
+ figure.effect-zoe p.description {
+ 	background-color: rgba(0,0,0,0.4);
+ 	width: 100%;
+ }
+
+ figure.effect-zoe h2,figure.effect-zoe p.icon-links a {
+ 	-webkit-transition:-webkit-transform .35s;
+ 	transition:transform .35s;
+ 	-webkit-transform:translate3d(0,200%,0);
+ 	transform:translate3d(0,200%,0)
+}
+ figure.effect-zoe p.icon-links a span::before {
+ 	display:inline-block;padding:8px 10px;
+ 	font-family:'feathericons';
+ 	speak:none;
+ 	-webkit-font-smoothing:antialiased;
+ 	-moz-osx-font-smoothing:grayscale;
+ }
+ .icon-eye::before{
+ 	content:'\e000';
+ }
+ .icon-paper-clip::before {
+ 	content:'\e001';
+ }
+ .icon-heart::before{
+ 	content:'\e024';
+}
+ figure.effect-zoe h2 {
+ 	display:inline-block;
+ }
+ figure.effect-zoe:hover p.description{
+ 	opacity:1;
+ }
+ figure.effect-zoe:hover figcaption,figure.effect-zoe:hover h2,figure.effect-zoe:hover p.icon-links a {
+ 	-webkit-transform:translate3d(0,0,0);
+ 	transform:translate3d(0,0,0);
+}
+ figure.effect-zoe:hover h2 {
+ 	-webkit-transition-delay:.05s;transition-delay:.05s;
+ }
+ figure.effect-zoe:hover p.icon-links a:nth-child(3){
+ 	-webkit-transition-delay:.1s;transition-delay:.1s;
+ }
+ figure.effect-zoe:hover p.icon-links a:nth-child(2){
+ 	-webkit-transition-delay:.15s;transition-delay:.15s
+ }
+ figure.effect-zoe:hover p.icon-links a:first-child{
+ 	-webkit-transition-delay:.2s;transition-delay:.2s;
+ }
+/*FIN effets CSS programme*/
+
+
+/*FIN CSS programmes*/
+
+/*CSS footer*/
+#partenaires {
+	font-size: 20px;
+	border-top: 1px solid #333;
+}
+#title {
+	margin-left: 20px;
+	padding-bottom: 10px;
+	color: #333;
+}
