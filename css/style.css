@@ -4,7 +4,7 @@
 }
 
 .carousel.vertical .item {
-  -webkit-transition: 0.6s ease-in-out top;
+  -webkit-transition: 0.6s ease-in-out bottom;
      -moz-transition: 0.6s ease-in-out top;
       -ms-transition: 0.6s ease-in-out top;
        -o-transition: 0.6s ease-in-out top;
@@ -16,16 +16,16 @@
 }
 
 .carousel.vertical .next {
-  top: 400px;
+  top: -400px;
 }
 
 .carousel.vertical .prev {
-  top: -400px;
+  top: 0;
 }
 
 .carousel.vertical .next.left,
 .carousel.vertical .prev.right {
-  top: 0;
+  top: 0px;
 }
 
 .carousel.vertical .active.left {
@@ -56,6 +56,7 @@ body {
 	background-color: rgba(17, 17, 17, 1);
 }
 h2 {
+	padding-left: 2%;
 	color: rgba(246, 139, 31, 1);
 	font-size: 70px;
 }
@@ -149,7 +150,7 @@ h4 {
 #prog {
 	margin-top: 40px;
 }
-#programmes{
+#programmes {
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -255,6 +256,26 @@ figure.effect-zoe figcaption {
 
 /*FIN CSS programmes*/
 
+/*CSS Livre d'or*/
+#livrOr{
+	padding-left: 20px;	
+}
+#formulaire {
+	color : #333;
+	font-size: 18px;
+}
+#formulaire > form {
+	background-color: #f0f1f0;
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 25px;
+
+}
+.btn-primary{
+	background-color: #949494;
+	border-color: #949494;
+	font-size: 16px;
+}
+
 /*CSS footer*/
 #partenaires {
 	font-size: 20px;
@@ -266,3 +287,4 @@ figure.effect-zoe figcaption {
 	padding-bottom: 10px;
 	color: #333;
 }
+
