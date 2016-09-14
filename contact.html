@@ -3,57 +3,130 @@
 <head>
 	<meta charset="utf-8" />
 	
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <title>Chartrestivales</title>
 </head>
 
 <body>
+<div id="accueil">
+            <header>
+                <script type="text/javascript">
+                    var $ = jQuery.noConflict();
+                     $(document).ready(function() {
+                         $('#myCarousel').carousel( 
+                            { interval: 5000,   
+                              cycle: true 
+                            }
+                         ); 
+                     });
+                     
+                     $(document).scroll(function() {
+                        if ( $('header').height() > $(document).scrollTop() ) {
+                            $('#navbar').removeClass("navbar-fixe")
+                        }
+                        else {
+                            $('#navbar').addClass("navbar-fixe")
+                        }
+                     });
+                     
+                </script>
+                    <div>
+                        <div id="homepage" class="homepage section">
+                            <div class="container-fluid">
+                                <div class="row-fluid">
+                                    <div id="accueilHaut" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        
+                                        <div id ="menuPlus" class="col-lg-offset-8 col-lg-4 col-md-offset-8 col-md-4 col-sm-offset-8 col-sm-4 col-xs-offset-8 col-xs-4">
+                                            <div class="row-fluid">
+                                                <div class=" col-lg-12">
+                                                    <ul>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                            <li><a href="contact.html">Nous contacter</a></li>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                            <li><a href="livre_or.html">Livre d'or</a></li>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>      
+                        </div>
+                    </div>
+                    <div id="navbar">
+                        
+                            <div class="container-fluid">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12">
+                                    <ul class="menu" id="nav">
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                            <li>ACCUEIL</li>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                            <li><a href="#programmes">PROGRAMMES</a></li>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                            <li>PHOTOTHEQUE</li>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                            <li>QUI SOMMES NOUS ?</li>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                            <li>LIVRE D'OR</li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <!--FORMULAIRE DE CONTACT-->
+                    <div id="contact">
+                        <div class="container-fluid">
+                            <div class="row-fluid">
+                                <div class="col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8">
+                                    <div class="well well-sm">
+                                        <form class="form-horizontal" method="post">
+                                            <fieldset>
+                                                <legend class="text-center header">Nous contacter</legend>
+                                                <div class="form-group">
+                                                    <div class="col-md-10 col-md-offset-1">
+                                                        <input id="fname" name="name" type="text" placeholder="Prénom" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-10 col-md-offset-1">
+                                                        <input id="lname" name="name" type="text" placeholder="Nom" class="form-control">
+                                                    </div>
+                                                </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="well well-sm">
-                <form class="form-horizontal" method="post">
-                    <fieldset>
-                        <legend class="text-center header">Nous contacter</legend>
-                        <div class="form-group">
-                            <div class="col-md-10 col-md-offset-1">
-                                <input id="fname" name="name" type="text" placeholder="Prénom" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-10 col-md-offset-1">
-                                <input id="lname" name="name" type="text" placeholder="Nom" class="form-control">
-                            </div>
-                        </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-10 col-md-offset-1">
+                                                        <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                                                    </div>
+                                                </div>
 
-                        <div class="form-group">
-                            <div class="col-md-10 col-md-offset-1">
-                                <input id="email" name="email" type="text" placeholder="Email" class="form-control">
-                            </div>
-                        </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-10 col-md-offset-1">
+                                                        <textarea class="form-control" id="message" name="message" placeholder="Ecrivez votre message ici..." rows="7"></textarea>
+                                                    </div>
+                                                </div>
 
-                        <div class="form-group">
-                            <div class="col-md-10 col-md-offset-1">
-                                <textarea class="form-control" id="message" name="message" placeholder="Ecrivez votre message ici..." rows="7"></textarea>
+                                                <div class="form-group">
+                                                    <div class="col-md-10 col-md-offset-1">
+                                                        <button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
-
-                        <div class="form-group">
-                            <div class="col-md-12 text-center">
-                                <button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-        
-    </div>
-</div>
+                    </div>
 </body>
 
 <footer>

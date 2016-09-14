@@ -146,6 +146,7 @@ h4 {
 	padding: 5px 5px 5px 5px;
 }
 
+
 /*CSS programmes*/
 #prog {
 	margin-top: 40px;
@@ -356,14 +357,7 @@ button {
   transform: translate3d(0,0,0);
 }
 
-/* CONTACT --------------------------------------------------------------------------------------------- */
-.map {
-        min-width: 300px;
-        min-height: 300px;
-        width: 100%;
-        height: 100%;
-        
-    }
+/* CONTACT et LIVRE D'OR--------------------------------------------------------------------------------------------- */
 
 .header {
         background-color: #F1F0F1;
@@ -379,7 +373,8 @@ legend {
 }
 
 .well {
-  background-color: #F1F0F1;
+  background-color: transparent;
+  border:none;
 }
 
 .btn-primary {
@@ -387,25 +382,39 @@ legend {
     background-color: #333;
     border-color: #333;
 }
+#contact {
+  margin-top: 15px;
+}
+#commentaire {
+  background-color: #F1F0F1;
+  padding: 5px 10px 10px 10px;
+  margin-bottom: 20px;
+}
 
-/*CSS Livre d'or*/
-#livrOr{
-	padding-left: 20px;	
+#cadre{
+  margin-bottom: 15px;
 }
-#formulaire {
-	color : #333;
-	font-size: 18px;
+#cadre > span {
+  font-weight: bold;
+  text-decoration: underline;
 }
-#formulaire > form {
-	background-color: #f0f1f0;
-	padding: 10px 10px 10px 10px;
-	margin-bottom: 25px;
-
+hr{
+  border: 0.5px solid #a8a8a8;
 }
-.btn-primary{
-	background-color: #949494;
-	border-color: #949494;
-	font-size: 16px;
+#coordonnees > img {
+  width: 24px;
+  float: right;
+  margin-bottom: 5px;
+}
+#detail{
+  margin-left: 5px;
+}
+#text{
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  color: #333;
 }
 
 /*CSS footer*/
