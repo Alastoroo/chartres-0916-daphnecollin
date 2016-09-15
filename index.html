@@ -18,7 +18,7 @@
                 var $ = jQuery.noConflict();
                 $(document).ready(function() {
                     $('#myCarousel').carousel( 
-                        { interval: 5000,   
+                        { interval: 4000,   
                             cycle: true 
                         }
                         ); 
@@ -83,10 +83,9 @@
                         </div>
                     </div>
                 </div>
-                <div id="navbar">
-
-                    <div class="container-fluid">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12">
+                <div id="navbar" class="container-fluid">
+                     
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs:hidden">
                             <ul class="menu" id="nav">
                                 <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
                                     <li><a href="#homepage">ACCUEIL</a></li>
@@ -111,8 +110,8 @@
                     </div>
 
                 </div>
-            </div>
-        </header>
+            
+            </header>
     </div>
     <!--PROGRAMMES-->
     <div id="programmes" class="container-fluid">
